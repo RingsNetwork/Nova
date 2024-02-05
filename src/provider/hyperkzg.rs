@@ -667,8 +667,8 @@ where
   }
 }
 
-/// An implementation of Nova traits with multilinear KZG over the BN256 curve
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+/// An implementation of Nova traits with HyperKZG over the BN256 curve
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Bn256EngineKZG;
 
 impl Engine for Bn256EngineKZG {

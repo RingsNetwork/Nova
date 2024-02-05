@@ -26,15 +26,13 @@ use crate::{
   traits::Engine,
 };
 use pasta_curves::{pallas, vesta};
-use serde::Deserialize;
-use serde::Serialize;
 
 /// An implementation of the Nova `Engine` trait with BN254 curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Bn256Engine;
 
 /// An implementation of the Nova `Engine` trait with Grumpkin curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct GrumpkinEngine;
 
 impl Engine for Bn256Engine {
@@ -58,11 +56,11 @@ impl Engine for GrumpkinEngine {
 }
 
 /// An implementation of the Nova `Engine` trait with Secp256k1 curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Secp256k1Engine;
 
 /// An implementation of the Nova `Engine` trait with Secp256k1 curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Secq256k1Engine;
 
 impl Engine for Secp256k1Engine {
@@ -86,11 +84,11 @@ impl Engine for Secq256k1Engine {
 }
 
 /// An implementation of the Nova `Engine` trait with Pallas curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct PallasEngine;
 
 /// An implementation of the Nova `Engine` trait with Vesta curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct VestaEngine;
 
 impl Engine for PallasEngine {
