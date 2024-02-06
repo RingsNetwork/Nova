@@ -58,11 +58,11 @@ impl Engine for GrumpkinEngine {
 }
 
 /// An implementation of the Nova `Engine` trait with Secp256k1 curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Secp256k1Engine;
 
 /// An implementation of the Nova `Engine` trait with Secp256k1 curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct Secq256k1Engine;
 
 impl Engine for Secp256k1Engine {
@@ -86,11 +86,11 @@ impl Engine for Secq256k1Engine {
 }
 
 /// An implementation of the Nova `Engine` trait with Pallas curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct PallasEngine;
 
 /// An implementation of the Nova `Engine` trait with Vesta curve and Pedersen commitment scheme
-#[derive(Clone, Copy, Debug, Eq, PartialEq, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct VestaEngine;
 
 impl Engine for PallasEngine {
